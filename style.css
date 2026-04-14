@@ -1,4 +1,4 @@
-/* RESET */
+/* ================= RESET ================= */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,7 +11,6 @@ html {
 }
 
 /* ================= HEADER ================= */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,22 +26,16 @@ html {
 .logo {
   display: flex;
   flex-direction: column;
-  line-height: 1;
 }
 
-.logo strong {
-  font-size: 20px;
-}
+.logo strong { font-size: 20px; }
 
 .logo span {
   font-size: 10px;
   color: #7a7a7a;
-  margin-top: 4px;
 }
 
-.logo-icon {
-  height: 100px;
-}
+.logo-icon { height: 100px; }
 
 .nav {
   display: flex;
@@ -62,64 +55,46 @@ html {
   width: 0;
   height: 2px;
   background: #F1813A;
-  left: 0;
   bottom: -5px;
+  left: 0;
   transition: 0.3s;
 }
 
-.nav a:hover::after {
-  width: 100%;
-}
+.nav a:hover::after { width: 100%; }
 
 .btn {
   background: #F1813A;
-  color: white;
+  color: #fff;
   padding: 10px 22px;
   border-radius: 25px;
   text-decoration: none;
-  font-size: 13px;
 }
 
-.btn:hover {
-  background: #414141;
-}
+.btn:hover { background: #414141; }
 
 .menu-toggle {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 
 /* ================= HERO ================= */
-
 .hero {
-  height: 80vh;
-  background: url('images/hero2.jpeg') center 150% / cover no-repeat;
+  min-height: 80vh;
+  background: url('images/hero2.jpeg') center / cover no-repeat;
   display: flex;
   align-items: center;
   padding: 120px;
-  color: white;
+  color: #fff;
 }
 
-.hero-text {
-  max-width: 500px;
-}
+.hero-text { max-width: 500px; }
 
-.hero-text h1 {
-  font-size: 42px;
-}
-
-.hero-text p {
-  font-size: 22px;
-}
-
-.hero-text a {
-  font-size: 16px;
-}
+.hero-text h1 { font-size: 42px; }
+.hero-text p { font-size: 22px; }
 
 /* ================= SOBRE ================= */
-
 .sobre {
   padding: 100px 40px;
   background: #f3ede6;
@@ -128,8 +103,8 @@ html {
 .sobre-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
   gap: 40px;
+  align-items: center;
 }
 
 .sobre-img img {
@@ -143,63 +118,8 @@ html {
   margin-bottom: 15px;
   line-height: 1.6;
 }
-@media (max-width: 768px) {
 
-  .sobre-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* TEXTO primeiro */
-  .sobre-content {
-    order: 1;
-    text-align: center;
-  }
-
-  /* CONTAINER DAS IMAGENS */
-  .sobre-img {
-    width: 48%;
-  }
-
-  /* AGRUPAR AS DUAS IMAGENS */
-  .sobre-container .sobre-img.left {
-    order: 2;
-  }
-
-  .sobre-container .sobre-img.right {
-    order: 3;
-  }
-
-  /* FAZER AS IMAGENS FICAREM LADO A LADO */
-  .sobre-container {
-    align-items: center;
-  }
-
-  .sobre-container .sobre-img {
-    display: inline-block;
-  }
-
-  /* MELHOR: usar flex só pras imagens */
-  .sobre-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-}
-@media (max-width: 768px) {
-
-  .portfolio .btn {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-}
 /* ================= SERVIÇOS ================= */
-
 .servicos {
   padding: 60px;
   text-align: center;
@@ -221,7 +141,6 @@ html {
 }
 
 /* ================= PORTFÓLIO ================= */
-
 .portfolio {
   padding: 100px 40px;
   background: #f3ede6;
@@ -230,16 +149,16 @@ html {
 
 .grid {
   display: flex;
-  gap: 25px;
-  margin-top: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .card-projeto {
-  position: relative;
   width: 300px;
   height: 220px;
+  position: relative;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -255,7 +174,7 @@ html {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.4);
-  color: white;
+  color: #fff;
   display: flex;
   align-items: flex-end;
   padding: 15px;
@@ -263,21 +182,21 @@ html {
   transition: 0.3s;
 }
 
-.card-projeto:hover img {
-  transform: scale(1.1);
-}
+.card-projeto:hover img { transform: scale(1.1); }
+.card-projeto:hover .overlay { opacity: 1; }
 
-.card-projeto:hover .overlay {
-  opacity: 1;
+.portfolio-btn {
+  display: block;
+  width: fit-content;
+  margin: 60px auto 0;
 }
 
 /* ================= CONTATO ================= */
-
 .contato {
   position: relative;
   padding: 100px 40px;
   background: url('images/idearq2.jpeg') top / cover no-repeat;
-  color: white;
+  color: #fff;
 }
 
 .contato::before {
@@ -287,21 +206,17 @@ html {
   background: rgba(0,0,0,0.5);
 }
 
-.contato > * {
-  position: relative;
-  z-index: 1;
-}
+.contato > * { position: relative; z-index: 1; }
 
 .form-container {
   max-width: 900px;
-  margin: 40px auto 0;
+  margin: 40px auto;
   border-radius: 12px;
   overflow: hidden;
-  background: white;
+  background: #fff;
 }
 
 /* ================= FOOTER ================= */
-
 .footer {
   background: #1f1f1f;
   color: #ccc;
@@ -310,56 +225,31 @@ html {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
 }
 
-.footer-col {
-  text-align: left;
-}
+.footer-col { text-align: left; }
 
 .footer-col h3,
-.footer-col h4 {
-  color: #fff;
-}
+.footer-col h4 { color: #fff; }
 
-.footer-col p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-col a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 40px;
-  padding-top: 15px;
-  text-align: center;
-  font-size: 13px;
-}
 .footer a {
   color: #ccc;
   text-decoration: none;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
-/* ================= WHATSAPP ================= */
+.footer a:hover { text-decoration: underline; }
 
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* ================= WHATSAPP ================= */
 .whatsapp-title {
   display: flex;
   align-items: center;
@@ -372,225 +262,88 @@ html {
   filter: invert(48%) sepia(93%) saturate(500%) hue-rotate(85deg);
 }
 
-/* ================= TAG ================= */
-
-.tag {
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: #414141;
-  margin-bottom: 10px;
-}
-
-/* ================= RESPONSIVO ================= */
-
-@media (max-width: 768px) {
-
-  .header {
-    padding: 0 20px;
-  }
-
-  .nav {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    background: #f3ede6;
-    display: none;
-    padding: 20px 0;
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .btn {
-    display: none;
-  }
-
-  .hero {
-    padding: 60px 20px;
-  }
-
-  .sobre-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .sobre-img img {
-    height: 250px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .card {
-    max-width: 320px;
-    width: 100%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-}
-@media (max-width: 768px) {
-
-  .footer-col {
-    text-align: center;
-  }
-
-  .footer-col p {
-    text-align: center;
-  }
-
-  .footer-col h4 {
-    text-align: center;
-  }
-
-  /* Centralizar o WhatsApp (ícone + texto) */
-  .whatsapp-title {
-    justify-content: center;
-  }
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
   width: 60px;
   height: 60px;
-
   background: #25D366;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 999;
-
-  transition: 0.3s;
 }
 
 .whatsapp-float img {
   width: 30px;
-  height: 30px;
-  filter: invert(1); /* deixa branco */
+  filter: invert(1);
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
+/* ================= TAG ================= */
+.tag {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #414141;
 }
-}
-/* ================= FIX IPHONE RESPONSIVO ================= */
 
+/* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
 
-  /* HEADER */
-  .header {
-    padding: 10px 20px;
-  }
+  .header { padding: 10px 20px; }
 
-  /* HERO */
-  .hero {
-    min-height: 80vh;
-    height: auto;
-    padding: 80px 20px;
-    background-position: center;
-  }
-
-  /* MENU MOBILE */
   .nav {
+    position: absolute;
+    top: 70px;
     width: 100%;
+    flex-direction: column;
+    background: #414141;
+    display: none;
+    align-items: center;
   }
 
-  .nav a {
-    color: #333;
-  }
+  .nav.active { display: flex; }
 
-  /* SOBRE */
-  .sobre-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .menu-toggle { display: block; }
+  .btn { display: none; }
+
+  .hero {
+    padding: 60px 20px;
     text-align: center;
   }
 
-  .sobre-img img {
-    width: 100%;
-    height: auto;
+  .sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* SERVIÇOS */
-  .cards {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
+  .sobre-img { width: 48%; }
 
-  .card {
-    width: 100%;
-    max-width: 320px;
-  }
+  .cards { grid-template-columns: 1fr; }
 
-  /* PORTFÓLIO */
+  .card { max-width: 320px; }
+
   .card-projeto {
     width: 100%;
     max-width: 320px;
   }
 
-  /* CONTATO */
-  .form-container iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-  }
-
-  /* FOOTER */
   .footer-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .footer-col {
     text-align: center;
-    max-width: 100%;
   }
 
+  .whatsapp-title {
+    justify-content: center;
+  }
 }
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  width: 60px;
-  height: 60px;
-
-  background: #25D366;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  z-index: 999;
-
-  transition: 0.3s;
-}
-
-.whatsapp-float img {
-  width: 30px;
-  height: 30px;
-  filter: invert(1); /* deixa branco */
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
+.portfolio > .btn {
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+  text-align: center;
 }
