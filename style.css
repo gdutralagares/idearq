@@ -433,6 +433,26 @@ html {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col p {
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    text-align: center;
+  }
+
+  /* Centralizar o WhatsApp (ícone + texto) */
+  .whatsapp-title {
+    justify-content: center;
+  }
+
+}
 /* ================= FIX IPHONE RESPONSIVO ================= */
 
 @media (max-width: 768px) {
