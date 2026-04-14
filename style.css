@@ -191,7 +191,7 @@ html {
   .portfolio .btn {
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 200px;
     margin: 20px auto;
     text-align: center;
   }
