@@ -9,6 +9,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 100px;
+}
 
 /* ================= HEADER ================= */
 .header {
@@ -364,7 +367,8 @@ html {
 
   /* CRIAR LINHA DAS IMAGENS */
   .sobre-img {
-    width: 48%;
+    width: 78%;
+    display: inline-block;
   }
 
   /* AGRUPAR IMAGENS NA MESMA LINHA */
@@ -383,7 +387,4 @@ html {
     gap: 12px;
   }
 
-}
-.sobre-img {
-  display: inline-block;
 }
