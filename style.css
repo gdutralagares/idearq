@@ -88,6 +88,7 @@ html {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  color: white;
 }
 
 /* ================= HERO ================= */
@@ -458,7 +459,36 @@ html {
   .whatsapp-title {
     justify-content: center;
   }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 
+  width: 60px;
+  height: 60px;
+
+  background: #25D366;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+
+  transition: 0.3s;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* deixa branco */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
 }
 /* ================= FIX IPHONE RESPONSIVO ================= */
 
@@ -533,4 +563,34 @@ html {
     max-width: 100%;
   }
 
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25D366;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+
+  transition: 0.3s;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* deixa branco */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
