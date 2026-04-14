@@ -76,6 +76,7 @@ html {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  padding: 10px 15px;
   color: #fff;
 }
 
@@ -292,11 +293,11 @@ html {
 /* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
 
-  .header { padding: 10px 20px; }
+  .header { padding: 0px 0px; }
 
   .nav {
     position: absolute;
-    top: 70px;
+    top: 100px;
     width: 100%;
     flex-direction: column;
     background: #414141;
@@ -346,4 +347,43 @@ html {
   width: fit-content;
   margin: 50px auto 0;
   text-align: center;
+}
+@media (max-width: 768px) {
+
+  .sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* TEXTO PRIMEIRO */
+  .sobre-content {
+    order: 1;
+    text-align: center;
+  }
+
+  /* CRIAR LINHA DAS IMAGENS */
+  .sobre-img {
+    width: 48%;
+  }
+
+  /* AGRUPAR IMAGENS NA MESMA LINHA */
+  .sobre-img.left {
+    order: 2;
+  }
+
+  .sobre-img.right {
+    order: 3;
+  }
+
+  /* ESSA LINHA FAZ ELAS FICAREM LADO A LADO */
+  .sobre-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+}
+.sobre-img {
+  display: inline-block;
 }
