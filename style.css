@@ -142,7 +142,50 @@ html {
   margin-bottom: 15px;
   line-height: 1.6;
 }
+@media (max-width: 768px) {
 
+  .sobre-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* TEXTO primeiro */
+  .sobre-content {
+    order: 1;
+    text-align: center;
+  }
+
+  /* CONTAINER DAS IMAGENS */
+  .sobre-img {
+    width: 48%;
+  }
+
+  /* AGRUPAR AS DUAS IMAGENS */
+  .sobre-container .sobre-img.left {
+    order: 2;
+  }
+
+  .sobre-container .sobre-img.right {
+    order: 3;
+  }
+
+  /* FAZER AS IMAGENS FICAREM LADO A LADO */
+  .sobre-container {
+    align-items: center;
+  }
+
+  .sobre-container .sobre-img {
+    display: inline-block;
+  }
+
+  /* MELHOR: usar flex só pras imagens */
+  .sobre-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
 /* ================= SERVIÇOS ================= */
 
 .servicos {
