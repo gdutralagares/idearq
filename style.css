@@ -81,6 +81,7 @@ section {
   cursor: pointer;
   padding: 10px 15px;
   color: #fff;
+  transition: transform 0.3s;
 }
 
 /* ================= HERO ================= */
@@ -387,4 +388,9 @@ section {
     gap: 12px;
   }
 
+}
+
+
+.menu-toggle.active {
+  transform: rotate(90deg);
 }
